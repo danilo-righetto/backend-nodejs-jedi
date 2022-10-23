@@ -1,0 +1,11 @@
+{
+  "mysql": {
+    "banco-de-dados": "petshop_api",
+    "usuario": "root",
+    "senha": "8c203a48ccd6816970beb02b",
+    "host": "127.0.0.1"
+  },
+  "api": {
+    "porta": 3000
+  }
+}

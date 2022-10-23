@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: petshop-mysql
+    hostname: petshop-mysql
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 8c203a48ccd6816970beb02b
+      MYSQL_DATABASE: petshop_api
+    volumes:
+      - ./db/:/var/lib/mysql
